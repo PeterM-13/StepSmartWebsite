@@ -1,0 +1,152 @@
+@import url('./globals.css');
+
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+main{
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#navLinks{
+    display: flex;
+    gap: 3rem;
+}
+#logo{
+    height: 4rem;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+}
+
+section{
+    margin-bottom: 6rem;
+    width: 100%;
+}
+
+#journeySection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+#heartImg{
+    width: 30rem;
+    border-radius: var(--border-radius);
+}
+
+
+#sloganBox{
+    background-color: var(--accent-colour);
+    border-radius: var(--border-radius);
+    padding: 0.25em;
+    text-align: center;
+    letter-spacing: 0.12rem;
+    font-weight: 500;
+}
+
+#innovationSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+#innovationSectionL{
+    position: relative;
+    margin: 2rem;
+    flex-grow: 1;
+}
+#innovationSectionR{
+  width: 40%;
+}
+.prototypeImg{
+    height: 7rem;
+    border-radius: var(--border-radius);
+    position: absolute;
+}
+#p1{top: -11rem; left: 3rem;}
+#p2{top: -5rem; left: 16rem;}
+#p3{top: 0rem; left: 0;}
+#p4{top: 6rem; left: 8rem;}
+
+
+
+
+
+
+/* Circles decoration behind image */
+.circleContainer{
+    position: relative;
+    z-index: -1;
+}
+.blueCircle{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #37343f;;
+    border-width: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -26.8rem;
+    left: 29.8rem;
+}
+.greenCircle{
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--accent-colour);
+    border-radius: 50%;
+    position: absolute;
+    top: -25rem;
+    left: 26rem;
+}
+
+/* Blury shapes on background */
+.blurry-shape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: var(--accent-colour);
+    border-radius: 50%;
+    filter: blur(130px);
+    opacity: 0.5;
+    z-index: -1;
+    top: 20%;
+    left: 20%;
+  }
+#b1{top: 20%; left: 10%;}
+#b2{top: 2%; left: 30%;}
+#b3{top: 60%; left: 90%;}
+#b4{top: 85%; left: 75%;}
+#b5{top: 65%; left: 4%;}
+#b6{top: 130%; left: 2%;}
+
+
+
+
+
+
+/* Adjust styles for smaller screens */
+@media (max-width: 1440px) {
+    body {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
