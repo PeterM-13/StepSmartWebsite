@@ -13,3 +13,13 @@
     padding-top: 2rem;
     padding-bottom: 5rem;
 }
+
+
+
+
+@media (max-width: 450px) {
+    #navLinks{
+        justify-content: space-between;
+        gap: 0;
+    }
+}

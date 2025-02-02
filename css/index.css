@@ -54,17 +54,125 @@ iframe{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
 
 #render2, #render3{
     width: 100%;
     margin-left: 3rem;
     margin-right: 3rem;
+    scale: 0.8;
 }
-#FeaturesTitle, #IterationTitle{
+.sectionTitle{
     width: 100%;
     text-align: left;
     position: relative;
+}
+#FeaturesTitle{
     margin-top: -6rem;
     top: 9rem;
+}
+#IterationTitle{
+    margin-top: -10rem;
+    top: 9rem;
+}
+#render2{
+    transition: transform 0.75s ease-in-out;
+    transform: translateX(0); 
+    position: relative;
+    top: -4rem;
+}
+#render2.hidden{
+    transform: translateX(-160%);
+}
+#appRender{
+    width: 100%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    scale:0.75;
+    transition: transform 0.75s ease-in-out;
+    transform: translateX(0); 
+    position: absolute;
+    top: -1rem;
+}
+#appRender.hidden{
+    transform: translateX(160%);
+}
+#viewToggle{
+    border: 5px solid var(--accent-colour);
+    border-radius: 12px;
+    margin-right: 2rem;
+    position: relative;
+    top: -11rem;
+}
+.toggle{
+    border: 0;
+    border-radius: 8px;
+    height: 4rem;
+    width: 10rem;
+    font-size: 18px;
+    letter-spacing: 0.05rem;
+    transition: 0.25s;
+}
+#stickView{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#appView{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.selectedToggle{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+.defaultToggle{
+    color: var(--accent-colour);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.defaultToggle:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+#render3{
+    margin-bottom: 5rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 400px){
+    #right{
+        display: none;
+    }
+    h1{
+        font-size: 25px !important;
+    }
+    #render2, #render3{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #FeaturesTitle, #IterationTitle{
+        margin-top: 4rem;
+        top: -1rem;
+    }
+    #render2{
+        top: -2rem;
+    }
+    #appRender{
+        
+    }
+    #viewToggle{
+        margin-right: 0;
+        top: 0;
+    }
+    .toggle{
+        height: 3rem;
+        width: 7rem;
+        font-size: 16px;
+    }
 }

@@ -21,6 +21,7 @@
 /* Styles comnmon across all pages below */
 
 body{
+    width: 100%;
     color: #FFFFFF;
     background-color: var(--background-colour);
     margin: 0;
@@ -119,4 +120,17 @@ span{
         padding-left: 5rem;
         padding-right: 5rem;
     }
+}
+@media (max-width: 450px) {
+    body{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #b2{display: none;}
+    #b3{display: none;}
+    #b4{display: none;}
+    #b7{display: none;}
+    #b8{display: none;}
+    #b9{display: none;}
+    #b10{display: none;}
 }
