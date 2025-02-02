@@ -5,27 +5,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="aboutPage.css">
-    <title>Step Smart</title>
+    <link rel="stylesheet" href="../css/awardsPage.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <script src="../js/loadComponents.js" defer></script>
+    <link rel="icon" href="../assets/images/Logo.PNG" type="image/png">
+    <title>Step Smart Awards</title>
 </head>
 
 
 <body>
 
-
-    <header>
-        <div style="display: flex;">
-            <img id="logo" src="./Assets/Logo.PNG" alt="Step Smart Logo">
-            <h2>Step <span>Smart</span></h2>
-        </div>
-        <div id="navLinks">
-            <a href="index.html">home</a>
-            <a href="aboutPage.html">about</a>
-            <a href="pricingPage.html">pricing</a>
-            <a href="cartPage.html">cart</a>
-        </div>
-    </header>
-
+    <div data-include="../components/header.html" class="container section"></div>
 
     <main>
         <section id="journeySection">
@@ -48,7 +38,7 @@
                 </p>
             </div>
             <div>
-                <img id="heartImg" src="./Assets/Heart.jpg" alt="Hand drawn heart">
+                <img id="heartImg" src="../assets/images/Heart.jpg" alt="Hand drawn heart">
                 <div class="circleContainer">
                     <div class="greenCircle"></div>
                     <div class="blueCircle"></div>
@@ -67,10 +57,10 @@
 
         <section id="innovationSection">
             <div id="innovationSectionL">
-                <img class="prototypeImg" id="p1" src="./Assets/Prototype 2.jpg" alt="Handle prototyping">
-                <img class="prototypeImg" id="p2" src="./Assets/Prototype 1.jpg" alt="Handle prototyping">
-                <img class="prototypeImg" id="p3" src="./Assets/Prototype 3.jpg" alt="Foot prototyping">
-                <img class="prototypeImg" id="p4" src="./Assets/Prototype 4.jpg" alt="Foot prototyping">
+                <img class="prototypeImg" id="p1" src="../assets/images/Prototype 2.jpg" alt="Handle prototyping">
+                <img class="prototypeImg" id="p2" src="../assets/images/Prototype 1.jpg" alt="Handle prototyping">
+                <img class="prototypeImg" id="p3" src="../assets/images/Prototype 3.jpg" alt="Foot prototyping">
+                <img class="prototypeImg" id="p4" src="../assets/images/Prototype 4.jpg" alt="Foot prototyping">
             </div>
             <div id="innovationSectionR">
                 <h1>Innovation...</h1>
@@ -120,5 +110,4 @@
 
 </body>
 
-<script src="aboutPage.js"></script>
 </html>

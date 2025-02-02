@@ -1,0 +1,15 @@
+@import url('../css/globals.css');
+
+.container{
+    width: 100%;
+}
+
+#navLinks{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}

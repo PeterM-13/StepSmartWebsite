@@ -1,0 +1,122 @@
+/* This file contains global styles that effect elements on all pages */
+
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* These are global variables */
+:root{
+    --accent-colour: #42DFA9CC;
+    --background-colour: #2C2A36;
+    --border-radius: 8px;
+}
+
+/* These styles effect all elements */
+* {
+    transition: 1s;
+    box-sizing: border-box;
+}
+
+
+/* Styles comnmon across all pages below */
+
+body{
+    color: #FFFFFF;
+    background-color: var(--background-colour);
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+section, .section {
+    max-width: 75rem;
+    width: 100%;
+}
+
+h1{
+    font-size: 60px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 20px;
+    color:#85c1b6;
+    letter-spacing: 0.1rem;
+}
+h4{
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    color: #FFFFFF;
+    font-weight:normal;
+    line-height: 2.0;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    transition: 0.0s;
+    font-family: 'Outfit', sans-serif;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--accent-colour);
+    text-decoration-thickness: 0.2rem;
+}
+
+span{
+    color: var(--accent-colour);
+}
+
+
+
+/* Blury shapes on background */
+.blurry-shape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: var(--accent-colour);
+    border-radius: 50%;
+    filter: blur(130px);
+    opacity: 0.5;
+    z-index: -1;
+    top: 20%;
+    left: 20%;
+  }
+#b1{top: 20%; left: 10%;}
+#b2{top: 2%; left: 30%;}
+#b3{top: 15%; left: 68%;}
+#b4{top: 85%; left: 75%;}
+#b5{top: 65%; left: 4%;}
+#b6{top: 110%; left: 2%;}
+#b7{top: 130%; left: 80%;}
+#b8{top: 220%; left: 78%;}
+#b9{top: 230%; left: 6%;}
+#b10{top: 290%; left: 20%;}
+
+
+
+
+
+
+/* Adjust styles for smaller screens */
+@media (max-width: 95rem) {
+    body{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
