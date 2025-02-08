@@ -1,5 +1,5 @@
 
-
+// Code for 'Smart Stick' <-> 'App' view button toggle.
 document.addEventListener('DOMContentLoaded', () => {
     const stickViewButton = document.getElementById('stickView');
     const appViewButton = document.getElementById('appView');
