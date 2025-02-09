@@ -137,6 +137,21 @@
     margin-top: -5rem;
     margin-bottom: 10rem;
 }
+#designTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#expandIcon{
+    height: 3rem;   
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1.0)); 
+}
+#expandIcon:hover{
+    scale: 1.1;
+    filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.7)); 
+}
 #versions{
     display: flex;
     justify-content: space-around;
@@ -205,6 +220,10 @@ hr{
         height: 3rem;
         width: 7rem;
         font-size: 16px;
+    }
+    #expandIcon{
+        height: 1.8em;
+        padding-bottom: 0.5rem;
     }
     #sectionVersions{
         margin-top: 5rem;
