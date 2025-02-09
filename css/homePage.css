@@ -147,10 +147,14 @@
 #expandIcon{
     height: 3rem;   
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1.0)); 
+    transition: 0.5s;
 }
 #expandIcon:hover{
-    scale: 1.1;
+    scale: 1.15;
     filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.7)); 
+}
+.highlight{
+    scale: 1.3; 
 }
 #versions{
     display: flex;
@@ -185,6 +189,85 @@ hr{
     font-size: larger;
     letter-spacing: 0.1rem;
 }
+
+/* Pre Order Section */
+#sectionPreOrder{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+#emailContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.6rem;
+    margin-top: 2rem;
+}
+#emailInput{
+    width: 100%;
+    height: 3rem;
+    border: 4px solid var(--accent-colour);
+    border-radius: var(--border-radius);
+    padding: 1.45rem;
+    font-size: medium;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    width: 40vw;
+    max-width: 40rem;
+    min-width: 18rem;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+#emailInput:disabled{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    border: 4px solid rgba(255, 255, 255, 0.5);
+}
+#emailButton{
+    color: var(--accent-colour);
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px solid var(--accent-colour);
+    font-size: medium;
+    border-radius: var(--border-radius);
+    padding: 0.7rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    box-shadow: 0 0 1.5rem 0.25rem rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    letter-spacing: 0.08rem;
+    transition: 0.3s;
+}
+#emailButton:hover{
+    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.25);
+    scale: 1.05;
+    cursor: pointer;
+    text-decoration: none;
+}
+#emailButton:active{
+    box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.5);
+    scale: 1.0;
+}
+#emailButton:disabled{
+    color: rgba(255, 255, 255, 0.5);
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+}
+#emailButton:disabled:hover{
+    scale: 1.0;
+}
+#emailButton:disabled img{
+    filter: grayscale(100%);
+}
+#emailIcon{
+    height: 1.5rem;
+}
+
+
 
 /* Mobile View */
 @media screen and (max-width: 600px){
