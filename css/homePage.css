@@ -317,4 +317,12 @@ hr{
     .versionText{
         font-size: small;
     }
+    #sectionPreOrder{
+        margin-top: 3rem;
+        margin-bottom: 8rem;
+    }
+    #emailContainer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
