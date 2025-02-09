@@ -83,3 +83,62 @@ p{
 .inlineLink:hover{
     font-weight: bold;
 }
+
+/* Report Section */
+#reportSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: 23rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+#reportLeft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1;
+}
+#reportButton{
+    color: var(--accent-colour);
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid var(--accent-colour);
+    font-size: medium;
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    padding: 0.5rem 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    box-shadow: 0 0 3rem 0.5rem rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+    margin-top: 3rem;
+    letter-spacing: 0.08rem;
+}
+#reportButton:hover{
+    box-shadow: 0 0 5rem 1rem rgba(0, 0, 0, 0.5);
+    scale: 1.05;
+    cursor: pointer;
+    text-decoration: none;
+}
+#reportButton:active{
+    box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.5);
+    scale: 1.0;
+}
+#searchReportIcon{
+    height: 3rem;
+}
+#reportImg{
+    flex: 2;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    scale: 1.3;
+    position: relative;
+    left: 4rem;
+}
