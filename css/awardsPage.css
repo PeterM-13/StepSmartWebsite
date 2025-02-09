@@ -1,108 +1,85 @@
 @import url('../css/globals.css');
 
-body{
+
+/* Header Section */
+#sectionHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+}
+#IMechE_Logo{
+    width: 28vw;
+    max-width: 28rem;
+    transition: 0s;
+}
+
+/* AAC Section */
+#AacSection{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    padding-left: 12rem;
-    padding-right: 12rem;
-}
-
-
-
-main{
-    font-weight: 400;
     width: 100%;
+    margin-top: 5rem;
+}
+#AacContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+#AacLeft{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
-
-
-
-section{
-    margin-bottom: 6rem;
+#winning_photo{
+    border-radius: var(--border-radius);;
+    width: 50%;
+}
+.trophyIcon{
+    height: 3rem;
+    position: relative;
+    top: 0.75rem;
+    padding-right: 1rem;
+}
+.awardTitle{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+#IMechE_Photos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
     width: 100%;
+    overflow: hidden;
 }
-
-#journeySection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-}
-
-#heartImg{
-    width: 30rem;
+.IMechE_Photo{
     border-radius: var(--border-radius);
+    height: 22vw;
+    max-height: 20rem;
 }
-
-
-#sloganBox{
-    background-color: var(--accent-colour);
-    border-radius: var(--border-radius);
-    padding: 0.25em;
-    text-align: center;
-    letter-spacing: 0.12rem;
-    font-weight: 500;
+p{
+    line-height: 1.5;
 }
-
-#innovationSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
+.inlineLink{
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    color: var(--accent-colour);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-colour);
+    text-decoration-thickness: 0.2rem;
 }
-#innovationSectionL{
-    position: relative;
-    margin: 2rem;
-    flex-grow: 1;
+.inlineLink:hover{
+    font-weight: bold;
 }
-#innovationSectionR{
-  width: 40%;
-}
-.prototypeImg{
-    height: 7rem;
-    border-radius: var(--border-radius);
-    position: absolute;
-}
-#p1{top: -11rem; left: 3rem;}
-#p2{top: -5rem; left: 16rem;}
-#p3{top: 0rem; left: 0;}
-#p4{top: 6rem; left: 8rem;}
-
-
-
-
-
-
-/* Circles decoration behind image */
-.circleContainer{
-    position: relative;
-    z-index: -1;
-}
-.blueCircle{
-    width: 4.5rem;
-    height: 4.5rem;
-    background-color: #37343f;;
-    border-width: 5px;
-    border-radius: 50%;
-    position: absolute;
-    top: -26.8rem;
-    left: 29.8rem;
-}
-.greenCircle{
-    width: 7rem;
-    height: 7rem;
-    background-color: var(--accent-colour);
-    border-radius: 50%;
-    position: absolute;
-    top: -25rem;
-    left: 26rem;
-}
-
-
-
-
