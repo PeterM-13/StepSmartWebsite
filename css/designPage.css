@@ -4,6 +4,7 @@
 .floatingImg{
     border-radius: var(--border-radius);
     box-shadow: 0 0 30px 4px rgba(0, 0, 0, 1.0);
+    height: 15rem;
     position: relative;
     transition: 0.5s;
 }
@@ -44,12 +45,10 @@ p{
     padding-right: 3rem;
 }
 #V1_Handles{
-    height: 15rem;
     left: 1rem;
     top: 3rem;
 }
 #V1_Feet{
-    height: 15rem;
     align-self: flex-end;
     right: 2rem;
     bottom: -2rem;
@@ -62,6 +61,7 @@ p{
 /* Version 2 section */
 #sectionVersion2{
     margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 #V2{
     display: flex;
@@ -76,6 +76,47 @@ p{
     padding-left: 3rem;
 }
 #V2_Video{
-    width: 50rem;
+    width: 45rem;
     height: auto;
+    align-self: center;
+    position: relative;
+    right: 6rem;
+}
+#V2_Feet{
+    width: 25rem;
+    height: auto;
+    right: 2rem;
+    position: absolute;
+}
+#V2_Handles{
+    align-self: flex-end;
+    z-index: 2;
+}
+#V2_Text{
+    align-self: flex-end;
+    right: 1rem;
+    width: 15rem;
+    bottom: 1rem;
+}
+
+/* Version 3 section */
+#sectionVersion3{
+
+}
+#V3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+}
+#V3_Render{
+    height: 40rem;
+    padding-left: 3rem;
+    transform: scaleX(-1);
+}
+#V3_Text{
+    right: 6rem;
+    top: 2rem;
 }
