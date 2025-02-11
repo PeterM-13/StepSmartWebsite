@@ -107,7 +107,7 @@ p{
     background-color: rgba(0, 0, 0, 0);
     border: 5px solid var(--accent-colour);
     font-size: medium;
-    font-weight: bold;
+    font-weight: regular;
     border-radius: var(--border-radius);
     padding: 0.5rem 3.5rem;
     display: flex;
