@@ -57,6 +57,7 @@ const emailButton = document.getElementById('emailButton');
 const emailInput = document.getElementById('emailInput');
 
 emailButton.addEventListener('click', async() => {
+    emailButton.disabled = true;
     const emailText = emailInput.value;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailPattern.test(emailText)) {
@@ -68,12 +69,28 @@ emailButton.addEventListener('click', async() => {
             return
         }
         console.log('Invalid save');
+        emailButton.disabled = false;
     }
     console.log('Invalid email');
 });
 
 
 async function saveEmail(emailInput){
-    // TODO
+    try {
+        const response = await fetch(`https://websitelogger.onrender.com/api/logs/email/${emailInput}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        return data.success;
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        return false;
+    }
     return true;
 }
