@@ -1,0 +1,14 @@
+@import url('../css/globals.css');
+
+#teamPhoto{
+    border-radius: var(--border-radius);
+    width: 70%;
+    
+}
+
+#imgeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}

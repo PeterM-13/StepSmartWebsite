@@ -142,3 +142,18 @@ p{
     position: relative;
     left: 4rem;
 }
+
+#jdaSection{
+    margin-top: 20rem;
+    margin-bottom: 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+#jdaLogo{
+    width: 30vw;
+    max-width: 30rem;
+    transition: 0s;
+    border-radius: var(--border-radius);
+}

@@ -116,6 +116,13 @@ p{
     padding-left: 3rem;
     transform: scaleX(-1);
 }
+#V3_Video{
+    width: 50rem;
+    height: auto;
+    position: relative;
+    align-self: center;
+    left: 2rem;
+}
 #V3_Text{
     right: 6rem;
     top: 2rem;
